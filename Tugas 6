@@ -1,0 +1,141 @@
+import java.util.*;
+
+public class TugasSesi6 {
+    public static void main(String[] args) throws Exception {
+        try (Scanner input = new Scanner(System.in)) {
+            List<TugasSesi6> daftarBuku = new ArrayList<>();
+            int jumlahBuku;
+            //Input Data
+            System.out.print("Masukkan jumlah buku: ");
+            jumlahBuku = input.nextInt();
+            input.nextLine();
+
+            for (int i = 0; i < jumlahBuku; i++) {
+                TugasSesi6 buku = new TugasSesi6();
+
+                System.out.println("Buku ke-" + (i + 1));
+                System.out.print("Judul: ");
+                buku.judul = System.console().readLine();
+                System.out.print("Pengarang: ");
+                buku.author = System.console().readLine();
+                System.out.print("Penerbit: ");
+                buku.penerbit = System.console().readLine();
+                System.out.print("Kategori (1-Teknik, 2-Manajemen, 3-Fiksi, 4-Lainnya): ");
+                buku.kategori = input.nextInt();
+                System.out.print("Tahun: ");
+                buku.tahun = input.nextInt();
+                input.nextLine();
+
+                daftarBuku.add(buku);
+            }
+
+            //Membuat Tabel
+            System.out.println("=====================================================================================================");
+            System.out.println("Daftar Buku Java yang Tersedia");
+            System.out.println("=====================================================================================================");
+            System.out.println("No  Judul                       Pengarang               Penerbit           Ketegori  Tahun");
+            System.out.println("=====================================================================================================");
+
+            for (int i = 0; i < daftarBuku.size(); i++) {
+                TugasSesi6 buku = daftarBuku.get(i);
+
+                System.out.printf("%-4d%-36s%-24s%-20s%-10d%-6d%n", (i + 1), buku.judul, buku.author, buku.penerbit, buku.kategori, buku.tahun);
+
+            }
+
+            //Menjumlahkan Jumlah Buku 
+            int bukuTeknik = 0;
+            int bukuManajemen = 0;
+            int bukuFiksi = 0;
+            int bukuLainnya = 0;
+            int bukuLawas = 0;
+            int bukuBaru = 0;
+
+            for (int i = 0; i < daftarBuku.size(); i++) {
+                TugasSesi6 buku = daftarBuku.get(i);
+
+                if (buku.tahun < 2000) {
+                    bukuLawas++;
+                } else {
+                    bukuBaru++;
+                }
+
+                switch (buku.kategori) {
+                    case 1:
+                        bukuTeknik++;
+                        break;
+                    case 2:
+                        bukuManajemen++;
+                        break;
+                    case 3:
+                        bukuFiksi++;
+                        break;
+                    case 4:
+                        bukuLainnya++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            //Memanggil Data Penjumlahan
+            System.out.println("=====================================================================================================");
+            System.out.println("Jumlah buku yang tersedia: " + daftarBuku.size());
+            System.out.println("Buku Teknik: " + bukuTeknik);
+            System.out.println("Buku Manajemen: " + bukuManajemen);
+            System.out.println("Buku Fiksi: " + bukuFiksi);
+            System.out.println("Buku Update Dan Buku Lawas");
+            System.out.println("Buku Lainnya: " + bukuLainnya);
+            System.out.println("Buku Lawas: " + bukuLawas);
+            System.out.println("Buku Baru: " + bukuBaru);
+        }
+    }
+    
+    public String judul;
+    public String author;
+    public String penerbit;
+    public int kategori;
+    public int tahun;
+    
+    public String getJudul() {
+        return judul;
+    }
+    
+    public void setJudul(String judul) {
+        this.judul = judul;
+    }
+    
+    public String getAuthor() {
+        return author;
+    }
+    
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+    
+    public String getPenerbit() {
+        return penerbit;
+    }
+    
+    public void setPenerbit(String penerbit) {
+        this.penerbit = penerbit;
+    }
+    
+    public int getKategori() {
+        return kategori;
+    }
+    
+    public void setKategori(int kategori) {
+        this.kategori = kategori;
+    }
+    
+    public int getTahun() {
+        return tahun;
+    }
+    
+    public void setTahun(int tahun) {
+        this.tahun = tahun;
+    }
+    
+}
+        

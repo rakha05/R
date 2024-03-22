@@ -1,0 +1,24 @@
+nama = input("Masukan Nama Kamu")
+umur = int(input("Masukan Umur"))
+tempat = input("Masukan Tempat Tinggal")
+tabungan = int(input("Masukan Tabungan"))
+
+if umur >40 :
+    if tempat == 'nevada' or tempat =='newyork' or tempat == 'havana' :
+        if tabungan > 10000000 :
+           pangkat = 'Don' 
+
+if umur >25  or  umur <39 :
+    if tempat == 'new jersey' or tempat =='manhattan' or tempat == 'nevada' :
+        if tabungan > 1000000 or tabungan <2000000 :
+           pangkat = 'UnderBoss'
+
+if umur >18  or  umur <24 :
+    if tempat == 'california' or tempat =='detroit' or tempat == 'boston' :
+        if tabungan < 1000000 :
+           pangkat = 'capo'
+
+if pangkat != "" :
+    print (f"{nama} dengan pangkat {pangkat} Terlihat Mecurigakan")
+else :
+    print (f"{nama} Tidak mencurigakkan")

@@ -1,0 +1,24 @@
+"Universitas Nusa Putra Sukabumi"
+inisial = kampus.split()
+
+print(kampus[17:-9],kampus[12:-15])
+print(kampus[1:13],kampus[14:18],kampus[19:24],kampus[-6:-3],kampus[-2:])
+print(kampus[-8:],kampus[17:-9],kampus[12:-15],kampus[:11])
+print(f"{inisial[0][0]}{inisial[1][0]}{inisial[2][0]}{inisial[3][0]}")
+print(kampus[8:12],kampus[14:19],kampus[-4:])
+
+name = input("insert your name : ")
+birthday = input("insert your birthday :")
+major = input("insert your major :")
+campus = input("insert your campus :")
+
+birth = birthday.split('/')
+initial = name.split()
+
+print(f"Name : {name}")
+print(f"Date : {birth[0]}")
+print(f"Month : {birth[1]}")
+print(f"Year : {birth[2]}")
+print(f"Major : {major}")
+print(f"Campus :{campus}")
+print(f"Initial :{initial[0][0]}{initial[1][0]}")

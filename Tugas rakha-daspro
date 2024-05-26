@@ -1,0 +1,480 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "558ec5b1-9e8c-43f7-afb2-95c152127a66",
+   "metadata": {},
+   "source": [
+    "<h1>Pengertian</h1>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dea7d083-6c8f-4320-b195-53d8833a908d",
+   "metadata": {},
+   "source": [
+    "1. Fungsi pada Phyton adalah kumpulan perintah atau baris kode yang dikelompokan menjadi satu kesatuan untuk kemudian bisa dipanggil atau digunakan berkali kali\n",
+    "2. sebuah fungsi dapat menerima parameter,dapat mengembalikan suatu nilai,dan dapat dipanggil berkali kali secara independen"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "67ad1482-99c8-4a9f-8147-c27d1d6d6bbd",
+   "metadata": {},
+   "source": [
+    "## Keuntungan"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e1df7f95-6453-45e2-933a-92f3045c72d7",
+   "metadata": {},
+   "source": [
+    "1. membagi kode program menjadi bagian bagian kecil dengan tugasnya masing - masing\n",
+    "2. membuat kode program menjadi lebih \"reusable\" dan lebih terstruktur"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c1fc4d8-3abb-4038-9eac-23ed5fe85a98",
+   "metadata": {},
+   "source": [
+    "## Sintaks"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "549225b7-e100-4d01-98b2-f1c3ac376543",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def function_name():\n",
+    "    Logic Program\n",
+    "cara memanggil fungsi dengan menuliskan fuction_name  diikuti kurang buka tutup () beserta parameter jika ada \n",
+    "    function_name()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "475d98a4-b082-4951-b8ea-216ad65f75da",
+   "metadata": {},
+   "source": [
+    "buatlah fungsi dengan nama \"helloPython\" yang berfungsi untuk mencetak \"welcome in Phython Language\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "e94d2eee-4155-4740-bc77-33bd6218ac07",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome in Python Language\n"
+     ]
+    }
+   ],
+   "source": [
+    "def hello_python():\n",
+    "    print(\"welcome in Python Language\")\n",
+    "\n",
+    "hello_python()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f981d4aa-cc3c-4956-a07a-80f1aa4ff1cc",
+   "metadata": {},
+   "source": [
+    "## Fungsi dengan parameter "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a0fb6689-de7c-4ee0-95c9-880c52221ee9",
+   "metadata": {},
+   "source": [
+    "Sebuah Fungsi dapat menerima paramater ataupun argumen yang merupakan suatu nilai/variabel yang dilemparkan ke dalam fungsi untuk diproses lebih lanjut"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c37e22f6-2e8c-4c6d-b91e-0958a0d93999",
+   "metadata": {},
+   "source": [
+    "## sintaks"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e735e15e-b741-4ee5-a048-70c78fbc82ce",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def function_name(param)\n",
+    "    Logic_Program\n",
+    "cara memanggil fungsi dengan menuliskan function_name diiikuti kurung buka tutup () beserta parameter \n",
+    "\n",
+    "function_name(param)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0472f5fa-d87b-465c-bb76-cc2457e82d94",
+   "metadata": {},
+   "source": [
+    "Buatlah fungsi dengan nama \"fullname\" yang mempunyai parameter \"firstname\" dan \"lastname\" digunakan untuk mencetak \"firstname\" dan \"lastname\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "dd8decc3-175d-4620-bcac-f433120119af",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "His First Name Is : wiliana\n",
+      "His Last Name Is : Irawan\n"
+     ]
+    }
+   ],
+   "source": [
+    "def fullname(x,y):\n",
+    "    print(f\"His First Name Is : {x}\")\n",
+    "    print(f\"His Last Name Is : {y}\")\n",
+    "\n",
+    "fullname(\"wiliana\",\"Irawan\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "efc33f8b-e7bb-451b-94cd-250d6b545c49",
+   "metadata": {},
+   "source": [
+    "Parameter fungsi diperbolehkan menggunakan lebih fungsi diperbolehkan menggunakan lebih dari 1,dimana parameter tersebut ada yang wajib harus diisi dan ada yang tidak harus diisi\n",
+    "def function_name (param_1,param_2,param_3...):\n",
+    "    Logic Program\n",
+    "cara memanggil fungsi dengan menuliskan function_name diikuti kurung buka tutup () beserta parameter \n",
+    "    Function_name (param_1, Param_2, param_3.....):"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f0cf7c1d-d0e1-47c6-aa58-6ab05083f7b2",
+   "metadata": {},
+   "source": [
+    "Buatlah Fungsi dengan nama maxValue yang mempunyai parameter \"val_1\",\"val_2\" dan \"val_3\" yang bertujuan untuk mencari nilai terbesar dari 3 nilai tersebut"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "06849993-1fc8-484e-a634-b50e19b1e926",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "22\n"
+     ]
+    }
+   ],
+   "source": [
+    "def max_value(val_1, val_2, val_3):\n",
+    "    print(max(val_1, val_2, val_3))\n",
+    "\n",
+    "max_value(22,1,4)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2d7ff99c-24ef-477a-a3c6-1cbc25b98f1a",
+   "metadata": {},
+   "source": [
+    "parameter opsional digunakan pada fungsi dengan cara memberikan nilai default,artinya nilai parameter sudah diberikan terlebih dahulu tanpa dipanggil"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "57bc47b0-9e52-4db7-9459-7c1816e07fe6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def function_name(param_1, param_2, param_3 = \"Nilai\") : \n",
+    "    Logic Program"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cf608eeb-9429-449a-bd04-8ebc03d14ead",
+   "metadata": {},
+   "source": [
+    "Buatlah Fungsi \"countCircleArea\" dengan 2 parameter yaitu \"phi\" dan \"diameter\" dimana paramether phi mempunyai nlai default 3.14 "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "6ad0e11a-fb13-481b-9927-ecd88fc26883",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Luas Lingkaran :  78.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "def lingkaran(diameter,phi =3.14):\n",
+    "    Luas = phi * diameter *diameter\n",
+    "    print(f\"Luas Lingkaran : \",Luas)\n",
+    "\n",
+    "lingkaran(5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "09af40b2-f71f-45d3-b67b-b0f3933376cd",
+   "metadata": {},
+   "source": [
+    "Fungsi dengan 2 parameter opsional juga dapat dilakukan pada phyton."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c38c979f-aa53-459e-a070-2577d5808964",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def info(suhu,daerah=\"Manchester\",satuan = \"Celcius\"):\n",
+    "    Print (f\"suhu sekarang di {daerah} : {suhu} {satuan} \")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6d4f5d97-f60e-4c52-acfb-51bb29ed7172",
+   "metadata": {},
+   "source": [
+    "adapun cara memanggilnya"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "23a7f787-f40c-49e1-8a51-94b7fbef4e2b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "suhu sekarang di Manchester : 29 Celcius \n"
+     ]
+    }
+   ],
+   "source": [
+    "def info(suhu,daerah=\"Manchester\",satuan=\"Celcius\"):\n",
+    "    print(f\"suhu sekarang di {daerah} : {suhu} {satuan} \")\n",
+    "\n",
+    "info(29)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fa45d454-6e5c-44af-a97d-e7a14f824e04",
+   "metadata": {},
+   "source": [
+    "## Fungsi Dengan return Value "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ab0563a9-9177-4c65-a224-07d52fcd0e6f",
+   "metadata": {},
+   "source": [
+    "yaitu fungsi nama dimana akhir dari programnya adalah nilai kembalian atau nilai balik. artinya nilai dalam fungsi dapat ditampung lagi ke variabel lain untuk digunakan operasi lebih lanjut."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b1f8302c-78c4-493e-a7d7-25c85b32a3f9",
+   "metadata": {},
+   "source": [
+    "Buatlah Fungsi dengan return value yang digunakan untuk mengecek sebuah bilangan termasuk bilangan negatif,bilangan netral(0) dan bilangan positif "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "f9a2d389-23f9-4ae1-ba50-8fbb1c5d6816",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ini Negatif\n",
+      "ini Netral\n",
+      "ini Positif\n",
+      "ini Negatif\n"
+     ]
+    }
+   ],
+   "source": [
+    "def cek_angka(angka):\n",
+    "    if angka < 0:\n",
+    "        return \"ini Negatif\"\n",
+    "\n",
+    "    elif angka == 0:\n",
+    "        return \"ini Netral\"\n",
+    "\n",
+    "    else :\n",
+    "        return \"ini Positif\"\n",
+    "\n",
+    "print(cek_angka(-5))\n",
+    "print(cek_angka(0))\n",
+    "print(cek_angka(15))\n",
+    "print(cek_angka(-22))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c66cb10-b514-4800-9b4e-32d96188b2db",
+   "metadata": {},
+   "source": [
+    "### Soal Latihan"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d7eb0c39-6242-467e-94df-e64325bc5fba",
+   "metadata": {},
+   "source": [
+    "1. Buatlah fungsi untuk menjumlahkan total nilai dari list \n",
+    "2. buatlah fungsi untuk mencari nilai terbesar dari sekumpulan list\n",
+    "3. buatlah fungsi untuk menjumlahkan 2 buah list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "70a6c996-80b5-4c99-9cc9-95c4f437a752",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "total nilai adalah = 22\n"
+     ]
+    }
+   ],
+   "source": [
+    "#soal 1\n",
+    "def nilai(angka):\n",
+    "    total = sum(angka)\n",
+    "    return total \n",
+    "\n",
+    "list =[2,3,4,6,7]\n",
+    "total_jum = nilai(list)\n",
+    "print (f\"total nilai adalah =\", total_jum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "c90694c7-77e8-44f3-8d36-61fc979f6822",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "angka terbesar adalah = 50\n"
+     ]
+    }
+   ],
+   "source": [
+    "#soal 2\n",
+    "def nilai_terbesar(number):\n",
+    "    besar =max(number)\n",
+    "    return besar \n",
+    "\n",
+    "numbers = [5,15,22,50,7]\n",
+    "terbesar = nilai_terbesar(numbers)\n",
+    "print(f\"angka terbesar adalah =\", terbesar)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "b491de49-18eb-4ce3-afad-f18c1cc1717c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hasil Penjumlahan: [3, 7, 11, 15]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#soal 3\n",
+    "list1= [2,4,6,8]\n",
+    "list2= [1,3,5,7]\n",
+    "def jum_list(list_1,list_2):\n",
+    "    hasil = []\n",
+    "    for a,b in zip(list_1,list_2):\n",
+    "        hasil.append(a + b)\n",
+    "\n",
+    "    return hasil\n",
+    "\n",
+    "hasil_penjumlahan = jum_list(list1, list2)\n",
+    "print(\"hasil Penjumlahan:\", hasil_penjumlahan)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b36fdcdb-10d5-43c0-8f21-dbd121e23c3a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
